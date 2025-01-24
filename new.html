@@ -8,13 +8,14 @@
     </head>
     <body>
         <div id="app">
-            <h1>Greetings from Vue!</h1>
+            <h1>{{message}}</h1>
         </div>
     </body>
     <script src="https://unpkg.com/browse/vue@3.5.13/"></script>
     <script>
-        new Vue({
+        new Vue ({
             el: '#app',
+            data: { message: 'Greetings from Vue'}
         })
     </script>
 </html>
